@@ -1,0 +1,175 @@
+/* Estilizando o corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(0, 0%, 99%);
+    /* Cor de fundo leve */
+    display: flex;
+    /* Ativa o flexbox */
+    flex-direction: column;
+    /* Alinha os itens na coluna */
+    min-height: 100vh;
+    /* Garante que o corpo ocupe pelo menos a altura da tela */
+    margin: 0;
+    /* Remove a margem padrão */
+}
+
+/* Estilizando o cabeçalho */
+header {
+    background-color: #28a745;
+    /* Verde do Bootstrap */
+    padding: 10px 0;
+    /* Preenchimento reduzido */
+}
+
+/* Estilizando os títulos no cabeçalho */
+header h1 {
+    font-size: 2rem;
+    /* Tamanho do texto reduzido */
+    margin: 0;
+}
+
+/* Estilizando o conteúdo principal */
+main {
+    flex: 1;
+    /* Faz o main ocupar todo o espaço disponível */
+    padding-bottom: 10px;
+    /* Espaço inferior para o rodapé */
+}
+
+
+footer {
+    background-color: #28a745;
+    /* Verde do Bootstrap */
+    position: relative;
+    /* Para posicionar o logo adequadamente */
+    padding: 10px 0;
+    /* Reduzindo o preenchimento superior e inferior */
+    margin-top: 10px;
+    /* Distância de 10px do conteúdo acima */
+}
+
+/* Logo do rodapé */
+#Logo {
+    width: 40px;
+    /* Largura reduzida para o logo */
+    margin-top: 5px;
+    /* Margem superior reduzida */
+}
+
+/* Estilizando os textos do rodapé */
+footer p {
+    margin: 0;
+    /* Remove margem */
+    font-size: 0.8rem;
+    /* Tamanho da fonte reduzido */
+}
+
+/* Estilizando os cartões do carrossel */
+.card {
+    border: none;
+    /* Remove a borda do cartão */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    overflow: hidden;
+    /* Esconde o conteúdo que excede a borda */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Transição suave ao passar o mouse */
+    margin: 10px;
+    /* Margem para espaçamento entre os cartões */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Efeito ao passar o mouse nos cartões */
+.card:hover {
+    transform: translateY(-5px);
+    /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Ajustando o tamanho da imagem dentro do cartão */
+.card img {
+    width: 100%;
+    /* Largura da imagem ocupando todo o cartão */
+    height: 280px;
+    /* Altura da imagem */
+    object-fit: cover;
+    /* Corta a imagem para preencher a área */
+}
+
+/* Estilizando o corpo do cartão */
+.card-body {
+    padding: 25px;
+    /* Preenchimento interno do corpo do cartão */
+    background-color: #e0e0e0;
+    /* Fundo branco para o corpo do cartão */
+}
+
+/* Estilizando os títulos dos cartões */
+.card-title {
+    font-size: 1.25rem;
+    /* Tamanho do texto do título */
+    margin: 0;
+    /* Remove margem padrão */
+    color: #333;
+    /* Cor do texto */
+}
+
+/* Estilizando o link no cartão */
+.card a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #28a745;
+    /* Cor do link */
+    font-weight: bold;
+    /* Texto em negrito */
+}
+
+/* Efeito ao passar o mouse sobre o link */
+.card a:hover {
+    color: #155724;
+    /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilizando os controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 0%;
+    /* Largura das setas */
+    color: #11d83f;
+    /* Cor verde para as setas */
+}
+
+.carousel-control-prev {
+    left: -20px; /* Move a seta para a esquerda mais próxima da borda */
+}
+
+.carousel-control-next {
+    right: -20px; /* Move a seta para a direita mais próxima da borda */
+}
+
+/* Estilizando o ícone das setas */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #157003;
+    /* Fundo branco para as setas */
+    border-radius: 25%;
+    /* Canto arredondado */
+    padding: 12px;
+    /* Espaçamento ao redor do ícone */
+}
+
+/* Efeito de hover para as setas */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    /* Aumenta a opacidade ao passar o mouse */
+}
+
+/* Para os ícones das setas */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    color: #28a745;
+    /* Cor das setas */
+}
